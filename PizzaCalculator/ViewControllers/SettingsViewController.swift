@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import Foundation
 
 class SettingsViewController: UIViewController {
 
@@ -21,21 +21,54 @@ class SettingsViewController: UIViewController {
     @IBOutlet var pizzaOnePieceTextField: UITextField!
     @IBOutlet var pizzaTwoPieceTextField: UITextField!
     @IBOutlet var pizzaThreePieceTextField: UITextField!
+
+    private var pizzaOneSquare: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
     
-    private func areaCalculationOne(for: Double) {
-    }
+    @IBAction func calculateButtonPressed() {
 
-    private func priceCalculation(for price: Double) {
+    }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let resultVC = segue.destination as? ResultViewController else { return }
+        resultVC.pizzaOneSquareText = areaCalculation(for: pizzaOneDiameterTextField.text ?? "", and: pizzaOnePieceTextField.text ?? "")
+        resultVC.pizzaTwoSquareText = areaCalculation(for: pizzaTwoDiameterTextField.text ?? "", and: pizzaTwoPieceTextField.text ?? "")
+        resultVC.pizzaThreeSquareText = areaCalculation(for: pizzaThreeDiameterTextField.text ?? "", and: pizzaThreePieceTextField.text ?? "")
+        resultVC.pizzaOneTotalPrice = priceCalculation(for: pizzaOnePriceTextField.text ?? "", and: pizzaOnePieceTextField.text ?? "")
+        resultVC.pizzaTwoTotalPrice = priceCalculation(for: pizzaTwoPriceTextField.text ?? "", and: pizzaTwoPieceTextField.text ?? "")
+        resultVC.pizzaThreeTotalPrice = priceCalculation(for: pizzaThreePriceTextField.text ?? "", and: pizzaThreePieceTextField.text ?? "")
+        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
-        dismiss(animated: true)
+        view.endEditing(true)
+    }
+}
+
+// MARK: - Private Methods
+
+extension SettingsViewController {
+    private func areaCalculation(for pizza: String, and count: String) -> String {
+        let pizza = Double((pizza as NSString).doubleValue)
+        let count = Double((count as NSString).doubleValue)
+        let pizzaOneSquare: Double
+
+        pizzaOneSquare = Double.pi * pizza * 2.0 * count
+        return String(format: "%.2f", pizzaOneSquare)
+    }
+
+    private func priceCalculation(for price: String, and count: String  ) -> String {
+        let price = Double((price as NSString).doubleValue)
+        let count = Double((count as NSString).doubleValue)
+        let pizzaOneTotalPrice: Double
+
+        pizzaOneTotalPrice = price * count
+        return String(format: "%.2f", pizzaOneTotalPrice)
     }
     
     private func showAlert(title: String, message: String, textField: UITextField? = nil) {
@@ -50,7 +83,7 @@ class SettingsViewController: UIViewController {
 }
 
 
-//MARK: - UITextFieldDelegate
+// MARK: - UITextFieldDelegate
 extension SettingsViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
@@ -61,7 +94,7 @@ extension SettingsViewController: UITextFieldDelegate {
             showAlert(title: "Не правильное значение", message: "Введите числовое значение")
             return
         }
-        guard let currentValue = Double(text), (0...4000).contains(currentValue) else {
+        guard let currentValue = Float(text), (0...4000).contains(currentValue) else {
             showAlert(title: "Не правильное значение", message: "Введите настоящее значение", textField: textField)
             return
         }
@@ -71,7 +104,6 @@ extension SettingsViewController: UITextFieldDelegate {
         let keyboardToolBar = UIToolbar()
         keyboardToolBar.sizeToFit()
         textField.inputAccessoryView = keyboardToolBar
-        
         
         let doneButton = UIBarButtonItem(
             barButtonSystemItem: .done,

@@ -13,7 +13,11 @@ class InfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        infoLabel.text = """
+    Заказывая пиццу мы зачастую выбираем те что представлены в разделе Акции.
+    Но не всегда выгодно купить несколько вместо одной большой.
+    Этот калькулятор поможет сделать выбор!
+    """
     }
     
     @IBAction func backButtonDidTapped() {
