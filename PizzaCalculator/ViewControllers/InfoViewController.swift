@@ -13,6 +13,7 @@ class InfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.addVerticalGradientLayer()
         infoLabel.text = """
     Заказывая пиццу мы зачастую выбираем те что представлены в разделе Акции.
     Но не всегда выгодно купить несколько вместо одной большой.

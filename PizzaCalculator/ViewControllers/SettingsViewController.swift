@@ -10,38 +10,47 @@ import Foundation
 
 class SettingsViewController: UIViewController {
 
-    @IBOutlet var pizzaOneDiameterTextField: UITextField!
-    @IBOutlet var pizzaTwoDiameterTextField: UITextField!
-    @IBOutlet var pizzaThreeDiameterTextField: UITextField!
+    @IBOutlet var pizzaOneDiameterTF: UITextField!
+    @IBOutlet var pizzaTwoDiameterTF: UITextField!
+    @IBOutlet var pizzaThreeDiameterTF: UITextField!
     
-    @IBOutlet var pizzaOnePriceTextField: UITextField!
-    @IBOutlet var pizzaTwoPriceTextField: UITextField!
-    @IBOutlet var pizzaThreePriceTextField: UITextField!
+    @IBOutlet var pizzaOnePriceTF: UITextField!
+    @IBOutlet var pizzaTwoPriceTF: UITextField!
+    @IBOutlet var pizzaThreePriceTF: UITextField!
 
-    @IBOutlet var pizzaOnePieceTextField: UITextField!
-    @IBOutlet var pizzaTwoPieceTextField: UITextField!
-    @IBOutlet var pizzaThreePieceTextField: UITextField!
+    @IBOutlet var pizzaOneCountTF: UITextField!
+    @IBOutlet var pizzaTwoCountTF: UITextField!
+    @IBOutlet var pizzaThreeCountTF: UITextField!
 
-    private var pizzaOneSquare: String = ""
+    @IBOutlet var pizzaOneWeightTF: UITextField!
+    @IBOutlet var pizzaTwoWeightTF: UITextField!
+    @IBOutlet var pizzaThreeWeightTF: UITextField!
+    
+//    private var pizzaOneSquare: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        view.addVerticalGradientLayer()
     }
     
     @IBAction func calculateButtonPressed() {
-
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let resultVC = segue.destination as? ResultViewController else { return }
-        resultVC.pizzaOneSquareText = areaCalculation(for: pizzaOneDiameterTextField.text ?? "", and: pizzaOnePieceTextField.text ?? "")
-        resultVC.pizzaTwoSquareText = areaCalculation(for: pizzaTwoDiameterTextField.text ?? "", and: pizzaTwoPieceTextField.text ?? "")
-        resultVC.pizzaThreeSquareText = areaCalculation(for: pizzaThreeDiameterTextField.text ?? "", and: pizzaThreePieceTextField.text ?? "")
-        resultVC.pizzaOneTotalPrice = priceCalculation(for: pizzaOnePriceTextField.text ?? "", and: pizzaOnePieceTextField.text ?? "")
-        resultVC.pizzaTwoTotalPrice = priceCalculation(for: pizzaTwoPriceTextField.text ?? "", and: pizzaTwoPieceTextField.text ?? "")
-        resultVC.pizzaThreeTotalPrice = priceCalculation(for: pizzaThreePriceTextField.text ?? "", and: pizzaThreePieceTextField.text ?? "")
         
+        resultVC.pizzaOneSquareText = areaCalculation(for: pizzaOneDiameterTF.text ?? "", and: pizzaOneCountTF.text ?? "")
+        resultVC.pizzaTwoSquareText = areaCalculation(for: pizzaTwoDiameterTF.text ?? "", and: pizzaTwoCountTF.text ?? "")
+        resultVC.pizzaThreeSquareText = areaCalculation(for: pizzaThreeDiameterTF.text ?? "", and: pizzaThreeCountTF.text ?? "")
+        
+        resultVC.pizzaOneTotalPrice = priceCalculation(for: pizzaOnePriceTF.text ?? "", and: pizzaOneCountTF.text ?? "")
+        resultVC.pizzaTwoTotalPrice = priceCalculation(for: pizzaTwoPriceTF.text ?? "", and: pizzaTwoCountTF.text ?? "")
+        resultVC.pizzaThreeTotalPrice = priceCalculation(for: pizzaThreePriceTF.text ?? "", and: pizzaThreeCountTF.text ?? "")
+        
+        resultVC.pizzaOneTotalWeight = weightCalculation(for: pizzaOneWeightTF.text ?? "", and: pizzaOneCountTF.text ?? "")
+        resultVC.pizzaTwoTotalWeight = weightCalculation(for: pizzaTwoWeightTF.text ?? "", and: pizzaTwoCountTF.text ?? "")
+        resultVC.pizzaThreeTotalWeight = weightCalculation(for: pizzaThreeWeightTF.text ?? "", and: pizzaThreeCountTF.text ?? "")
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -58,17 +67,31 @@ extension SettingsViewController {
         let count = Double((count as NSString).doubleValue)
         let pizzaOneSquare: Double
 
-        pizzaOneSquare = Double.pi * pizza * 2.0 * count
+        pizzaOneSquare = Double.pi * (pizza * 2) * count
         return String(format: "%.2f", pizzaOneSquare)
     }
 
-    private func priceCalculation(for price: String, and count: String  ) -> String {
+    private func priceCalculation(for price: String, and count: String) -> String {
         let price = Double((price as NSString).doubleValue)
         let count = Double((count as NSString).doubleValue)
         let pizzaOneTotalPrice: Double
-
-        pizzaOneTotalPrice = price * count
+        
+        if count == 1 {
+            pizzaOneTotalPrice = price * count
+        } else {
+            pizzaOneTotalPrice = price * 1
+        }
+//        pizzaOneTotalPrice = price * count
         return String(format: "%.2f", pizzaOneTotalPrice)
+    }
+    
+    private func weightCalculation(for weight: String, and count: String) -> String {
+        let weight = Double((weight as NSString).doubleValue)
+        let count = Double((count as NSString).doubleValue)
+        let totalWeight: Double
+        
+        totalWeight = weight * count
+        return String(format: "%.2f", totalWeight)
     }
     
     private func showAlert(title: String, message: String, textField: UITextField? = nil) {
@@ -118,5 +141,37 @@ extension SettingsViewController: UITextFieldDelegate {
         )
         
         keyboardToolBar.items = [flexBarButton, doneButton]
+    }
+}
+
+extension CGFloat {
+    static func randomColor() -> CGFloat {
+        CGFloat(arc4random()) / CGFloat(UInt32.max)
+    }
+}
+
+extension UIColor {
+    static func random() -> UIColor {
+        return UIColor(
+            red: .randomColor(),
+            green: .randomColor(),
+            blue: .randomColor(),
+            alpha: 1
+        )
+    }
+}
+
+extension UIView {
+    func addVerticalGradientLayer() {
+        let firstColor = UIColor.random()
+        let secondColor = UIColor.random()
+        
+        let gradient = CAGradientLayer()
+        gradient.frame = bounds
+        gradient.colors = [firstColor.cgColor, secondColor.cgColor]
+        gradient.locations = [0.0, 1.0]
+        gradient.startPoint = CGPoint(x: 0, y: 0)
+        gradient.endPoint = CGPoint(x: 0, y: 1)
+        layer.insertSublayer(gradient, at: 0)
     }
 }

@@ -17,6 +17,10 @@ class ResultViewController: UIViewController {
     @IBOutlet var pizzaTwoPriceLabel: UILabel!
     @IBOutlet var pizzaThreePriceLabel: UILabel!
     
+    @IBOutlet var pizzaOneTotalWeightLabel: UILabel!
+    @IBOutlet var pizzaTwoTotalWeightLabel: UILabel!
+    @IBOutlet var pizzaThreeTotalWeightLabel: UILabel!
+    
     var pizzaOneSquareText: String!
     var pizzaTwoSquareText: String!
     var pizzaThreeSquareText: String!
@@ -25,15 +29,25 @@ class ResultViewController: UIViewController {
     var pizzaTwoTotalPrice: String!
     var pizzaThreeTotalPrice: String!
     
+    var pizzaOneTotalWeight: String!
+    var pizzaTwoTotalWeight: String!
+    var pizzaThreeTotalWeight: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        pizzaOneSquareLabel.text = pizzaOneSquareText
-        pizzaTwoSquareLabel.text = pizzaTwoSquareText
-        pizzaThreeSquareLabel.text = pizzaThreeSquareText
+        view.addVerticalGradientLayer()
         
-        pizzaOnePriceLabel.text = pizzaOneTotalPrice
-        pizzaTwoPriceLabel.text = pizzaTwoTotalPrice
-        pizzaThreePriceLabel.text = pizzaThreeTotalPrice
+        pizzaOneSquareLabel.text = "\(pizzaOneSquareText ?? "") см²"
+        pizzaTwoSquareLabel.text = "\(pizzaTwoSquareText ?? "") см²"
+        pizzaThreeSquareLabel.text = "\(pizzaThreeSquareText ?? "") см²"
+        
+        pizzaOnePriceLabel.text = "\(pizzaOneTotalPrice ?? "") ₽"
+        pizzaTwoPriceLabel.text = "\(pizzaTwoTotalPrice ?? "") ₽"
+        pizzaThreePriceLabel.text = "\(pizzaThreeTotalPrice ?? "") ₽"
+        
+        pizzaOneTotalWeightLabel.text = "\(pizzaOneTotalWeight ?? "") гр."
+        pizzaTwoTotalWeightLabel.text = "\(pizzaTwoTotalWeight ?? "") гр."
+        pizzaThreeTotalWeightLabel.text = "\(pizzaThreeTotalWeight ?? "") гр."
     }
     
     @IBAction func backButtonPressed() {
