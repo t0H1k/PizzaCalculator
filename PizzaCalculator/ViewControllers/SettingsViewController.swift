@@ -38,7 +38,7 @@ class SettingsViewController: UIViewController {
     }
     
     @IBAction func calculateButtonPressed() {
-        view.addVerticalGradientLayer()
+        
     }
     
     @IBAction func pizzaOneComboSwitch() {

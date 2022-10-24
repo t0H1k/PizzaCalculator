@@ -53,5 +53,4 @@ class ResultViewController: UIViewController {
     @IBAction func backButtonPressed() {
         dismiss(animated: true)
     }
-    
 }
