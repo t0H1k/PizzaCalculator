@@ -35,12 +35,12 @@
                                 <rect key="frame" x="16" y="110.5" width="343" height="166"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rcV-lx-m7i">
-                                        <rect key="frame" x="0.0" y="0.0" width="62" height="166"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="50.5" height="166"/>
                                         <subviews>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сравниваем" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eAe-ln-Gw6">
-                                                <rect key="frame" x="0.0" y="0.0" width="62" height="34"/>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пицца" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eAe-ln-Gw6">
+                                                <rect key="frame" x="0.0" y="0.0" width="50.5" height="34"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="7"/>
+                                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="10"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                                 <userDefinedRuntimeAttributes>
@@ -50,10 +50,10 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пицца №1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldk-xe-4Nf">
-                                                <rect key="frame" x="0.0" y="44" width="62" height="34"/>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="№1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldk-xe-4Nf">
+                                                <rect key="frame" x="0.0" y="44" width="50.5" height="34"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="8"/>
+                                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                                 <userDefinedRuntimeAttributes>
@@ -63,10 +63,10 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пицца №2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTo-AU-mgZ">
-                                                <rect key="frame" x="0.0" y="88" width="62" height="34"/>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="№2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTo-AU-mgZ">
+                                                <rect key="frame" x="0.0" y="88" width="50.5" height="34"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="8"/>
+                                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                                 <userDefinedRuntimeAttributes>
@@ -76,10 +76,10 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пицца №3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJx-au-scF">
-                                                <rect key="frame" x="0.0" y="132" width="62" height="34"/>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="№3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJx-au-scF">
+                                                <rect key="frame" x="0.0" y="132" width="50.5" height="34"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="8"/>
+                                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                                 <userDefinedRuntimeAttributes>
@@ -92,12 +92,12 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="geg-LV-3jg">
-                                        <rect key="frame" x="70" y="0.0" width="62.5" height="166"/>
+                                        <rect key="frame" x="58.5" y="0.0" width="50.5" height="166"/>
                                         <subviews>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Диаметр" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agR-Fl-Ndu">
-                                                <rect key="frame" x="0.0" y="0.0" width="62.5" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="50.5" height="34"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="11"/>
+                                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="10"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                                 <userDefinedRuntimeAttributes>
@@ -108,7 +108,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="см" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UWe-EM-VOA">
-                                                <rect key="frame" x="0.0" y="44" width="62.5" height="34"/>
+                                                <rect key="frame" x="0.0" y="44" width="50.5" height="34"/>
                                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="11"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                 <connections>
@@ -116,7 +116,7 @@
                                                 </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="см" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ktc-Ab-gat">
-                                                <rect key="frame" x="0.0" y="88" width="62.5" height="34"/>
+                                                <rect key="frame" x="0.0" y="88" width="50.5" height="34"/>
                                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="11"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                 <connections>
@@ -124,7 +124,7 @@
                                                 </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="см" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FMD-fA-x1x">
-                                                <rect key="frame" x="0.0" y="132" width="62.5" height="34"/>
+                                                <rect key="frame" x="0.0" y="132" width="50.5" height="34"/>
                                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="11"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                 <connections>
@@ -134,12 +134,12 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="EvB-5F-zNC">
-                                        <rect key="frame" x="140.5" y="0.0" width="62" height="166"/>
+                                        <rect key="frame" x="117" y="0.0" width="50.5" height="166"/>
                                         <subviews>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Цена" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3EA-2r-Hz5">
-                                                <rect key="frame" x="0.0" y="0.0" width="62" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="50.5" height="34"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="11"/>
+                                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="10"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                                 <userDefinedRuntimeAttributes>
@@ -150,7 +150,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1099₽" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vGz-Oo-5Wr">
-                                                <rect key="frame" x="0.0" y="44" width="62" height="34"/>
+                                                <rect key="frame" x="0.0" y="44" width="50.5" height="34"/>
                                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="11"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                 <connections>
@@ -158,7 +158,7 @@
                                                 </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="699₽" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oyg-L5-glO">
-                                                <rect key="frame" x="0.0" y="88" width="62" height="34"/>
+                                                <rect key="frame" x="0.0" y="88" width="50.5" height="34"/>
                                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="11"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                 <connections>
@@ -166,7 +166,7 @@
                                                 </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="399₽" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I15-NM-ONm">
-                                                <rect key="frame" x="0.0" y="132" width="62" height="34"/>
+                                                <rect key="frame" x="0.0" y="132" width="50.5" height="34"/>
                                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="11"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                 <connections>
@@ -176,12 +176,12 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zQy-ET-INi">
-                                        <rect key="frame" x="210.5" y="0.0" width="62.5" height="166"/>
+                                        <rect key="frame" x="175.5" y="0.0" width="50.5" height="166"/>
                                         <subviews>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вес" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQg-UQ-H81">
-                                                <rect key="frame" x="0.0" y="0.0" width="62.5" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="50.5" height="34"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="11"/>
+                                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="10"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                                 <userDefinedRuntimeAttributes>
@@ -192,7 +192,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="гр." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fIT-A9-bhI">
-                                                <rect key="frame" x="0.0" y="44" width="62.5" height="34"/>
+                                                <rect key="frame" x="0.0" y="44" width="50.5" height="34"/>
                                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="11"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                 <connections>
@@ -200,7 +200,7 @@
                                                 </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="гр." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VQO-rp-xSj">
-                                                <rect key="frame" x="0.0" y="88" width="62.5" height="34"/>
+                                                <rect key="frame" x="0.0" y="88" width="50.5" height="34"/>
                                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="11"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                 <connections>
@@ -208,7 +208,7 @@
                                                 </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="гр." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aBU-eg-FiM">
-                                                <rect key="frame" x="0.0" y="132" width="62.5" height="34"/>
+                                                <rect key="frame" x="0.0" y="132" width="50.5" height="34"/>
                                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="11"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                 <connections>
@@ -218,12 +218,12 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ihK-Cw-dLF">
-                                        <rect key="frame" x="281" y="0.0" width="62" height="166"/>
+                                        <rect key="frame" x="234" y="0.0" width="50.5" height="166"/>
                                         <subviews>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Штук" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="irR-PR-XLa">
-                                                <rect key="frame" x="0.0" y="0.0" width="62" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="50.5" height="34"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="11"/>
+                                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="10"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                                 <userDefinedRuntimeAttributes>
@@ -234,7 +234,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="шт." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mBn-qa-N67">
-                                                <rect key="frame" x="0.0" y="44" width="62" height="34"/>
+                                                <rect key="frame" x="0.0" y="44" width="50.5" height="34"/>
                                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="11"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                 <connections>
@@ -242,7 +242,7 @@
                                                 </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="шт." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gWy-Bv-dgV">
-                                                <rect key="frame" x="0.0" y="88" width="62" height="34"/>
+                                                <rect key="frame" x="0.0" y="88" width="50.5" height="34"/>
                                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="11"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                 <connections>
@@ -250,13 +250,49 @@
                                                 </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="шт." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iHM-hb-nWu">
-                                                <rect key="frame" x="0.0" y="132" width="62" height="34"/>
+                                                <rect key="frame" x="0.0" y="132" width="50.5" height="34"/>
                                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="11"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="BYZ-38-t0r" id="MMV-yE-4hj"/>
                                                 </connections>
                                             </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="AZ3-kk-3xR">
+                                        <rect key="frame" x="292.5" y="0.0" width="50.5" height="166"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Комбо?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2Q-nB-u7k">
+                                                <rect key="frame" x="0.0" y="0.0" width="50.5" height="35.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="10"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5aD-cd-aag">
+                                                <rect key="frame" x="0.0" y="43.5" width="52.5" height="35.5"/>
+                                                <connections>
+                                                    <action selector="pizzaOneComboSwitch" destination="BYZ-38-t0r" eventType="valueChanged" id="t97-Rj-LTp"/>
+                                                </connections>
+                                            </switch>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="pzy-F2-lJi">
+                                                <rect key="frame" x="0.0" y="87" width="52.5" height="35.5"/>
+                                                <connections>
+                                                    <action selector="pizzaTwoComboSwitch" destination="BYZ-38-t0r" eventType="valueChanged" id="jtf-x2-zNf"/>
+                                                </connections>
+                                            </switch>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9mL-WX-GA1">
+                                                <rect key="frame" x="0.0" y="130.5" width="52.5" height="35.5"/>
+                                                <connections>
+                                                    <action selector="pizzaThreeComboSwitch" destination="BYZ-38-t0r" eventType="valueChanged" id="tVH-ig-3Px"/>
+                                                </connections>
+                                            </switch>
                                         </subviews>
                                     </stackView>
                                 </subviews>
@@ -299,14 +335,17 @@
                     </view>
                     <navigationItem key="navigationItem" title=" Калькулятор Пиццы" id="JiX-NG-Cob"/>
                     <connections>
+                        <outlet property="pizzaOneCombo" destination="5aD-cd-aag" id="ItB-kz-fUg"/>
                         <outlet property="pizzaOneCountTF" destination="mBn-qa-N67" id="ov3-XE-bha"/>
                         <outlet property="pizzaOneDiameterTF" destination="UWe-EM-VOA" id="Llf-g5-Rzg"/>
                         <outlet property="pizzaOnePriceTF" destination="vGz-Oo-5Wr" id="kAp-8p-1h4"/>
                         <outlet property="pizzaOneWeightTF" destination="fIT-A9-bhI" id="771-aP-d3d"/>
+                        <outlet property="pizzaThreeCombo" destination="9mL-WX-GA1" id="ow6-lJ-JLk"/>
                         <outlet property="pizzaThreeCountTF" destination="iHM-hb-nWu" id="8Cb-ry-3hJ"/>
                         <outlet property="pizzaThreeDiameterTF" destination="FMD-fA-x1x" id="Vw2-R0-g9k"/>
                         <outlet property="pizzaThreePriceTF" destination="I15-NM-ONm" id="Av3-hB-Tik"/>
                         <outlet property="pizzaThreeWeightTF" destination="aBU-eg-FiM" id="1pe-Sy-D2W"/>
+                        <outlet property="pizzaTwoCombo" destination="pzy-F2-lJi" id="WsB-pP-X4a"/>
                         <outlet property="pizzaTwoCountTF" destination="gWy-Bv-dgV" id="Or7-of-7Ij"/>
                         <outlet property="pizzaTwoDiameterTF" destination="Ktc-Ab-gat" id="PvB-68-F7T"/>
                         <outlet property="pizzaTwoPriceTF" destination="oyg-L5-glO" id="C7K-KZ-Thd"/>

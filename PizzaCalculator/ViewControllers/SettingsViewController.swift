@@ -26,7 +26,11 @@ class SettingsViewController: UIViewController {
     @IBOutlet var pizzaTwoWeightTF: UITextField!
     @IBOutlet var pizzaThreeWeightTF: UITextField!
     
-//    private var pizzaOneSquare: String = ""
+    @IBOutlet var pizzaOneCombo: UISwitch!
+    @IBOutlet var pizzaTwoCombo: UISwitch!
+    @IBOutlet var pizzaThreeCombo: UISwitch!
+    
+    private var comboCount = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +38,25 @@ class SettingsViewController: UIViewController {
     }
     
     @IBAction func calculateButtonPressed() {
-        
+        view.addVerticalGradientLayer()
+    }
+    
+    @IBAction func pizzaOneComboSwitch() {
+        if pizzaOneCombo.isOn {
+            comboCount = 1
+        }
+    }
+    
+    @IBAction func pizzaTwoComboSwitch() {
+        if pizzaTwoCombo.isOn {
+            comboCount = 1
+        }
+    }
+    
+    @IBAction func pizzaThreeComboSwitch() {
+        if pizzaThreeCombo.isOn {
+            comboCount = 1
+        } 
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -62,6 +84,7 @@ class SettingsViewController: UIViewController {
 // MARK: - Private Methods
 
 extension SettingsViewController {
+    
     private func areaCalculation(for pizza: String, and count: String) -> String {
         let pizza = Double((pizza as NSString).doubleValue)
         let count = Double((count as NSString).doubleValue)
@@ -76,11 +99,17 @@ extension SettingsViewController {
         let count = Double((count as NSString).doubleValue)
         let pizzaOneTotalPrice: Double
         
-        if count == 1 {
+        
+        if comboCount == 0.0 {
             pizzaOneTotalPrice = price * count
         } else {
-            pizzaOneTotalPrice = price * 1
+            pizzaOneTotalPrice = price * comboCount
         }
+//        if count == 1 {
+//            pizzaOneTotalPrice = price * count
+//        } else {
+//            pizzaOneTotalPrice = price * 1
+//        }
 //        pizzaOneTotalPrice = price * count
         return String(format: "%.2f", pizzaOneTotalPrice)
     }
